@@ -1,4 +1,6 @@
 services:
+    #Please add the class to service "chaplean.business_days" even if it is constructed by a factory since we might need to add method calls based on compile-time checks
     chaplean.business_days:
+        class: Chaplean\Bundle\BusinessDaysBundle\Factory\BusinessFactory
         factory: 'Chaplean\Bundle\BusinessDaysBundle\Factory\BusinessFactory:createBusiness'
         arguments: ['%locale%']
