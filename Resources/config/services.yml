@@ -1,1 +1,4 @@
-#services:
+services:
+    chaplean.business_days:
+        factory: 'Chaplean\Bundle\BusinessDaysBundle\Factory\BusinessFactory:createBusiness'
+        arguments: ['%%']
