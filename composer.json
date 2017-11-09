@@ -1,8 +1,8 @@
 {
-    "name": "chaplean/bundle-name-bundle",
+    "name": "chaplean/business-days-bundle",
     "license": "MIT",
     "type": "symfony-bundle",
-    "description": "The Bundle base to fork",
+    "description": "Chaplean business days",
     "authors": [
         {
             "name": "Chaplean",
@@ -11,12 +11,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "Chaplean\\Bundle\\BundleNameBundle\\": ""
+            "Chaplean\\Bundle\\BusinessDaysBundle\\": ""
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\Chaplean\\Bundle\\BundleNameBundle\\": "Tests/"
+            "Tests\\Chaplean\\Bundle\\BusinessDaysBundle\\": "Tests/"
         }
     },
     "repositories": [

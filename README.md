@@ -8,8 +8,8 @@ This version of the bundle requires Symfony 2.8+.
 # Create my Bundle
 
 1. Fork me !
-1. Search **"BundleName"** and replace with bundle name in CamelCase
-1. Search **"bundle-name"** and replace with bundle name in lowercase with "-" if necessary
+1. Search **"BusinessDays"** and replace with bundle name in CamelCase
+1. Search **"business-days"** and replace with bundle name in lowercase with "-" if necessary
 1. Follow steps behind
 1. If the bundle needs to be public, you have to remove **private/** folder and **auth.json**
 
@@ -19,7 +19,7 @@ This version of the bundle requires Symfony 2.8+.
 
 1. IMPORTANT: replace ssh key (each project needs to have his own key)
 1. Generate key without passphrase with `ssh-keygen` in `private/ssh` (replace old ones)
-1. Add generate key in Bitbucket with name **"Docker - BundleName Bundle"**
+1. Add generate key in Bitbucket with name **"Docker - BusinessDays Bundle"**
 1. Add generate key in ~/.ssh/authorized_key2 on satis.chaplean.coop
 
 ### 2. Coveralls
@@ -36,10 +36,10 @@ This version of the bundle requires Symfony 2.8+.
 
 1. Initialize git-flow in repository (cf [Git](https://docs.google.com/document/d/1oBOi_ODucIE0aBGMOnLLTZyzEw0vGT_X1lef0RjJBso/edit))
 1. Update files name for:
-    * ChapleanBundleNameBundle.php
-    * DependencyInjection/ChapleanBundleNameExtension.php
+    * ChapleanBusinessDaysBundle.php
+    * DependencyInjection/ChapleanBusinessDaysExtension.php
 1. Rename `chaplean/bundle` in `composer.json` with your bundle name
-1. Make `docker exec bundle-name_application composer install`
+1. Make `docker exec business-days_application composer install`
 1. Run `cp vendor/chaplean/coding-standard/hooks/pre-commit .git/hooks/ && chmod +x .git/hooks/pre-commit`
 
 ### 5. README.md
@@ -55,14 +55,14 @@ If you want to use assetic, you can add the bundle in composer and uncomment rel
 ## 1. Composer
 
 ```
-composer require chaplean/bundle-name-bundle
+composer require chaplean/business-days-bundle
 ```
 
 ## 2. AppKernel.php
 
 Add
 ```
-            new Chaplean\Bundle\MailerBundle\ChapleanBundleNameBundle(),
+            new Chaplean\Bundle\MailerBundle\ChapleanBusinessDaysBundle(),
 ```
 
 ## 3. config.yml
@@ -70,12 +70,12 @@ Add
 ##### A. Import
 
 ```
-    - { resource: '@ChapleanBundleNameBundle/Resources/config/config.yml' }
+    - { resource: '@ChapleanBusinessDaysBundle/Resources/config/config.yml' }
 ```
 
 ##### B. Configuration
 
 ```
-chaplean_bundle-name:
+chaplean_business-days:
     test: false
 ```
