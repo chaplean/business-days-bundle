@@ -1,3 +1,0 @@
-#BusinessDays_index:
-#    path: /
-#    defaults: { _controller: ChapleanBusinessDaysBundle:Default:index }
