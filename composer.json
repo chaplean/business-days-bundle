@@ -41,7 +41,8 @@
         "mockery/mockery": "dev-master",
         "phpunit/phpunit": "^6.3",
         "symfony/http-kernel": "^3.0 || ^4.0",
-        "symfony/var-dumper": "^3.0 || ^4.0"
+        "symfony/var-dumper": "^3.0 || ^4.0",
+		"symfony/phpunit-bridge": "^4.0"
     },
     "config": {
         "bin-dir": "bin",
