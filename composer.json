@@ -19,12 +19,6 @@
             "Tests\\Chaplean\\Bundle\\BusinessDaysBundle\\": "Tests/"
         }
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://satis.chaplean.coop"
-        }
-    ],
     "require": {
         "php": ">=7.0.8",
         "azuyalabs/yasumi": "^1.6",
